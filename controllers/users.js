@@ -34,5 +34,5 @@ module.exports.login = (req, res) => {
 module.exports.logout = (req, res) => {
     req.logout();
     req.flash('success', 'You have been successfully logged out.');
-    res.redirect('/campgrounds');
+    res.redirect('/');
 };
